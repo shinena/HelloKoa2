@@ -9,6 +9,8 @@ const logger = require('koa-logger')
 const index = require('./routes/index')
 const users = require('./routes/users')
 const logUtil = require('./utils/log_util')
+const api = require('./routes/api')
+const response_formatter = require('./middlewares/response_formatter')
 
 // error handler
 onerror(app)
@@ -50,6 +52,15 @@ app.use(async (ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
+
+app.use(response_formatter('^/api'))
+
+router.use('/', index.routes(), index.allowedMethods())
+router.use('./users', users.routes(), users.allowedMethods())
+router.use('./api', api.routes(), api.allowedMethods())
+
+app.use(router.routes(), routes.allowedMethods())
+router.use('/api', api.routes(), api.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {

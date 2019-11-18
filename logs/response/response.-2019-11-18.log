@@ -1,0 +1,62 @@
+[2019-11-18T14:51:41.782] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser?id=1
+request client ip:  ::ffff:127.0.0.1
+request query:  {"id":"1"}
+response time: 4
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2019-11-18T14:53:04.806] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser?id=1
+request client ip:  ::ffff:127.0.0.1
+request query:  {"id":"1"}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2019-11-18T14:53:04.864] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"阿，希爸","age":31}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2019-11-18T14:54:48.427] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser?id=1
+request client ip:  ::ffff:127.0.0.1
+request query:  {"id":"1"}
+response time: 3
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2019-11-18T14:54:48.476] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"阿，希爸","age":31}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+

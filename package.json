@@ -7,24 +7,29 @@
     "koa": "./node_modules/.bin/runkoa bin/www",
     "pm2": "pm2 start bin/run ",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register",
-    "start_koa": "bin/run"
+    "start_koa": "bin/run",
+    "test1": "NODE_ENV=test mocha --require babel-core/register"
   },
   "dependencies": {
-    "debug": "^2.6.3",
-    "koa": "^2.2.0",
-    "koa-bodyparser": "^3.2.0",
+    "co": "^4.6.0",
+    "debug": "^2.2.0",
+    "jade": "~1.11.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^2.0.1",
     "koa-convert": "^1.2.0",
-    "koa-json": "^2.0.2",
-    "koa-logger": "^2.0.1",
+    "koa-json": "^1.1.1",
+    "koa-logger": "^1.3.0",
     "koa-onerror": "^1.2.1",
-    "koa-router": "^7.1.1",
-    "koa-static": "^3.0.0",
-    "koa-views": "^5.2.1",
+    "koa-router": "^7.0.0",
+    "koa-static": "^2.0.0",
+    "koa-views": "^5.0.1",
     "log4js": "^4.0.2",
-    "pug": "^2.0.0-rc.1",
-    "runkoa": "^1.5.9"
+    "runkoa": "^1.3.1",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
     "nodemon": "^1.8.1"
   }
 }

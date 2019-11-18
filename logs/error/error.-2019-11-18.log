@@ -1,0 +1,21 @@
+[2019-11-18T15:39:48.827] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 24
+err name: Error
+err message: Cannot find module 'pug'
+err stack: Error: Cannot find module 'pug'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at /Users/wangxiaowei/myProject/NewProject/HelloKoa2/node_modules/consolidate/lib/consolidate.js:797:33
+    at /Users/wangxiaowei/myProject/NewProject/HelloKoa2/node_modules/consolidate/lib/consolidate.js:144:5
+    at promisify (/Users/wangxiaowei/myProject/NewProject/HelloKoa2/node_modules/consolidate/lib/consolidate.js:137:10)
+    at exports.pug (/Users/wangxiaowei/myProject/NewProject/HelloKoa2/node_modules/consolidate/lib/consolidate.js:793:10)
+    at /Users/wangxiaowei/myProject/NewProject/HelloKoa2/node_modules/koa-views/lib/index.js:53:20
+*************** error log end ***************
+
